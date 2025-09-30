@@ -7,6 +7,11 @@
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Italianno&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
       href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
       rel="stylesheet"
     />
@@ -100,21 +105,28 @@
         object-fit: cover;
       }
 
-      /* Typography adjustments */
       .card-title {
-        font-size: 2rem;
+        font-family: "Alex Brush", cursive;
+        font-size: 2.5rem;
         color: #5a267a;
-        margin-bottom: 0.75rem;
-        font-weight: 700;
+        font-weight: 400;
         letter-spacing: 1.5px;
+        margin-bottom: 0.75rem;
+      }
+      h1 span {
+        font-weight: bold;
+      }
+      .card-subtitle {
+        color: #6b4c76;
+        margin-bottom: 1rem;
       }
 
-      .card-subtitle {
-        font-size: 1.1rem;
-        color: #7a5d8d;
-        margin-bottom: 1.5rem;
-        font-style: italic;
-        font-weight: 500;
+      .card-details {
+        font-family: "Sacramento", cursive;
+        font-size: 1rem;
+        color: #6b4c76;
+        line-height: 1.7;
+        margin-bottom: 2rem;
       }
 
       .card-details {
@@ -122,6 +134,21 @@
         color: #6b4c76;
         line-height: 1.7;
         margin-bottom: 2rem;
+      }
+
+      .card-invitation-header {
+        font-family: "Alex Brush", cursive;
+        font-size: 2rem;
+        color: #7a4d9c;
+        font-weight: 400;
+        margin-bottom: 1rem;
+      }
+
+      .card-invite-text {
+        font-family: "Italianno", cursive;
+        font-size: 1.5rem;
+        color: #6b4c76;
+        font-style: italic;
       }
 
       /* Responsive typography and sizing adjustments */
@@ -136,6 +163,9 @@
         .card-title {
           font-size: 1.6rem;
           letter-spacing: 1px;
+        }
+        .card-title span {
+          font-weight: bolder;
         }
         .card-subtitle {
           font-size: 1rem;
@@ -178,14 +208,24 @@
             "
           />
         </header>
-        <h1 class="card-title">Mounika & Phaneendra</h1>
+        <h2 class="card-invitation-header">Wedding Invitation</h2>
+        <img
+          src="./7891586c9f36e334714caf839b14c157-removebg-preview__2_-removebg-preview.png"
+          alt="divider"
+          style="width: 250px; height: 30px"
+        />
         <p class="card-subtitle">
-          Joyfully invite you to celebrate their wedding
+          With the blessings of the Almighty and our families, we joyfully
+          invite you to the sacred union of
         </p>
-        <p class="card-details">
-          <strong>Date:</strong> 10th December 2025<br />
-          <strong>Venue:</strong> The Grand Palace, Hyderabad<br />
-          <strong>Time:</strong> 6:00 PM onwards
+        <h1 class="card-title">
+          <span>Mounika</span><br />
+          & <br />
+          <span>Phaneendra Kumar</span>
+        </h1>
+        <p class="card-invite-text">
+          “Your presence will make our celebration even more special — please
+          join us to bless the beautiful couple ✨”
         </p>
       </div>
     </main>
