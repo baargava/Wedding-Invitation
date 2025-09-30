@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Mounika &amp; Phaneendra's Wedding</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      /* Background base color and font */
+      .body-primary {
+        background-color: #e6e6fa; /* primary color */
+        font-family: "Noto Serif", serif;
+        color: #3c3836; /* stone-800 text color approximation */
+      }
+
+      /* Main container */
+      .main-relative {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+      /* Mango leaves background */
+      .mango-leaves-bg {
+        position: absolute;
+        inset: 0; /* top, right, bottom, left = 0 */
+        background-image: url("./bgFlower.png");
+        background-repeat: repeat;
+        background-size: 5%;
+        opacity: 0.1;
+        z-index: 0;
+      }
+
+      /* Banana trees base */
+      .banana-tree {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 200px;
+        height: auto;
+        background-size: cover;
+        pointer-events: none;
+        z-index: 10;
+      }
+
+      /* Banana left tree */
+      .banana-left {
+        left: 0;
+        background-position: left bottom;
+        background-image: url("./leftPillar.png");
+      }
+
+      /* Banana right tree */
+      .banana-right {
+        right: 0;
+        background-position: right bottom;
+        background-image: url("./rightPillar.png");
+      }
+      /* Responsive Wedding Card Styles */
+      .wedding-card {
+        position: relative;
+        background-color: #f8f4fa;
+        border: 2px solid #d4b4e8;
+        border-radius: 25px;
+        padding: 2rem 2.5rem;
+        text-align: center;
+        max-width: 90vw; /* max 90% of viewport width */
+        width: 713.453px;
+        box-shadow: 0 10px 25px rgba(155, 89, 182, 0.25);
+        font-family: "Noto Serif", serif;
+        margin: 1rem;
+      }
+
+      /* Header container for images */
+      .wedding-card header {
+        display: flex;
+        justify-content: center;
+        gap: 1.2rem; /* space between images */
+        margin-bottom: 1.2rem;
+      }
+
+      /* Header images responsive */
+      .wedding-card header img {
+        width: 50px;
+        height: auto;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      /* Typography adjustments */
+      .card-title {
+        font-size: 2rem;
+        color: #5a267a;
+        margin-bottom: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+      }
+
+      .card-subtitle {
+        font-size: 1.1rem;
+        color: #7a5d8d;
+        margin-bottom: 1.5rem;
+        font-style: italic;
+        font-weight: 500;
+      }
+
+      .card-details {
+        font-size: 1rem;
+        color: #6b4c76;
+        line-height: 1.7;
+        margin-bottom: 2rem;
+      }
+
+      /* Responsive typography and sizing adjustments */
+      @media (max-width: 600px) {
+        .wedding-card {
+          width: 95vw;
+          padding: 1.5rem 1.5rem;
+        }
+        .wedding-card header img {
+          width: 40px;
+        }
+        .card-title {
+          font-size: 1.6rem;
+          letter-spacing: 1px;
+        }
+        .card-subtitle {
+          font-size: 1rem;
+          margin-bottom: 1rem;
+        }
+        .card-details {
+          font-size: 0.9rem;
+          margin-bottom: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="body-primary">
+    <main class="main-relative">
+      <div class="mango-leaves-bg"></div>
+      <div class="banana-tree banana-left"></div>
+      <div class="banana-tree banana-right"></div>
+
+      <!-- Invitation Card -->
+      <div class="wedding-card">
+        <header>
+          <img
+            src="./lordGanesh.png"
+            alt="lordGanesh"
+            style="
+              width: 44px;
+              height: auto;
+              border-radius: 50%;
+              margin-bottom: 1rem;
+            "
+          />
+          <img
+            src="./lordSiva.png"
+            alt="lordSiva"
+            style="
+              width: 44px;
+              height: auto;
+              border-radius: 50%;
+              margin-bottom: 1rem;
+            "
+          />
+        </header>
+        <h1 class="card-title">Mounika & Phaneendra</h1>
+        <p class="card-subtitle">
+          Joyfully invite you to celebrate their wedding
+        </p>
+        <p class="card-details">
+          <strong>Date:</strong> 10th December 2025<br />
+          <strong>Venue:</strong> The Grand Palace, Hyderabad<br />
+          <strong>Time:</strong> 6:00 PM onwards
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
